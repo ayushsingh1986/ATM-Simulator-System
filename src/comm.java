@@ -16,6 +16,7 @@ public class comm {
 	public comm() {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
+			System.out.println("initializing driver");
 			c = DriverManager.getConnection("jdbc:mysql:///project2", "root", "");
 			s = c.createStatement();
 		} catch (Exception e) {
