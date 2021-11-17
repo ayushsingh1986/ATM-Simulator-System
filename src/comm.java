@@ -20,7 +20,7 @@ public class comm {
 			c = DriverManager.getConnection("jdbc:mysql:///project2", "root", "");
 			s = c.createStatement();
 		} catch (Exception e) {
-			System.out.println(e);
+			e.printStackTrace();
 		}
 	}
 
